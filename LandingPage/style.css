@@ -164,3 +164,11 @@ input[type="email"] {
         width: 60%;
     }
 }
+
+
+@media screen and (min-width: 900px){
+    .showcase{
+        background: linear-gradient(to bottom right,hsl(243, 94%, 18%),hsl(243, 45%, 64%));
+        margin-bottom: 40px;
+    }
+}
