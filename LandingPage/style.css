@@ -1,108 +1,112 @@
+/* mobile version */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: 'Open Sans', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    color: gray;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: gray;
 }
-h1, h2, h3, h4{
-    font-family: 'Raleway', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    color: black;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: black;
 }
-h1{
-    font-size: 25px;
+h1 {
+  font-size: 25px;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
-a{
-    text-decoration: none;
-    color: white;
+a {
+  text-decoration: none;
+  color: white;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
-.container{
-    width: 100%;
+.container {
+  width: 100%;
 }
 
-.showcase{
-    width: 100%;
-    height: 80vh;
-    background: url('./images/bg-intro.svg') no-repeat center center/cover;
-    position: relative;
+.showcase {
+  width: 100%;
+  height: 80vh;
+  background: url("./images/bg-intro.svg") no-repeat center center/cover;
+  position: relative;
 }
 
 .showcase-top {
-    position: relative;
-    height: 90px;
+  position: relative;
+  height: 90px;
 }
 
 .logo {
-    position: absolute;
-    width: 90px;
-    top: 7%;
-    left: 10%;
-    align-items: center;
+  position: absolute;
+  width: 90px;
+  top: 7%;
+  left: 10%;
+  align-items: center;
 }
 
 .fylo-word {
-   fill: white;
+  fill: white;
 }
 
-.fylo{
-    width: 100%;
+.fylo {
+  width: 100%;
 }
 
-.social-icon{
-    position: absolute;
-    width: 120px;
-    top: 7%;
-    right: 5%;
+.social-icon {
+  position: absolute;
+  width: 120px;
+  top: 7%;
+  right: 5%;
 }
 
 li {
-    display: inline-block;
-    padding-left: 18px;
+  display: inline-block;
+  padding-left: 18px;
 }
 
-.showcase-img{
-    position: absolute;
-    width: 75%;
-    top: 52%;
-    left: 50%;
-    transform: translate(-50%,-50%);   
+.showcase-img {
+  position: absolute;
+  width: 75%;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.content{
-    width: 70%;
-    margin: auto;
-    padding: 5px;
+.content {
+  width: 70%;
+  margin: auto;
+  padding: 5px;
 }
 
-.desc{
-    margin: 15px 0px 20px;
-    font-size: 11px;
+.desc {
+  margin: 15px 0px 20px;
+  font-size: 11px;
 }
 
-input[type=email]{
-    width: 100%;
-    padding: 10px 10px;
-    border: 1px solid white;
-    border-radius: 4px;  
-    margin: 15px 0px 20px;
-    box-shadow:0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+input[type="email"] {
+  width: 100%;
+  padding: 10px 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin: 15px 0px 20px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
 .btn {
-  background-color: hsl(163, 95%, 43%); 
+  background-color: hsl(163, 95%, 43%);
   display: inline-block;
   padding: 12px 5px;
   width: 45%;
@@ -111,25 +115,52 @@ input[type=email]{
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   align-items: center;
   text-align: center;
-  font-size: 14px; 
+  font-size: 14px;
   font-weight: bold;
 }
 
 .priv {
-    text-align: right;
-    margin: 40px 0px 19px;
-    font-size: 12px;
-    text-decoration: underline;
-    color: black;   
+  text-align: right;
+  margin: 40px 0px 19px;
+  font-size: 12px;
+  text-decoration: underline;
+  color: black;
 }
 
-.priv a{
-    color: black;
+.priv a {
+  color: black;
 }
 
 .attribution {
-    background-color: hsl(0, 0%, 90%);
-    font-size: 10px;
-    padding: 3px;
-    text-align: center;
+  background-color: hsl(0, 0%, 90%);
+  font-size: 10px;
+  padding: 3px;
+  text-align: center;
+}
+
+/* tablet version */
+@media screen and (min-width: 560px) and (max-width: 900px){
+    .showcase{
+        background: linear-gradient(to bottom right,hsl(243, 94%, 18%),hsl(243, 45%, 64%));
+        margin-bottom: 40px;
+    }
+    .logo{
+        width: 100px;
+    }
+    .social-icon{
+        width: 130px;
+    }
+    
+    .social-icon li{
+        font-size: 20px;
+    }
+    
+    .showcase-img {
+        width: 70%;
+        top: 57%;
+    }
+    
+    .content{
+        width: 60%;
+    }
 }
