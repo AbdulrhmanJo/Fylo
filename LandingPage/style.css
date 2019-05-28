@@ -47,6 +47,7 @@ img {
 .showcase-top {
   position: relative;
   height: 90px;
+  top: 5%;
 }
 
 .logo {
@@ -139,33 +140,112 @@ input[type="email"] {
 }
 
 /* tablet version */
-@media screen and (min-width: 560px) and (max-width: 900px){
-    .showcase{
-        background: linear-gradient(to bottom right,hsl(243, 94%, 18%),hsl(243, 45%, 64%));
-        margin-bottom: 40px;
-    }
-    .logo{
-        width: 100px;
-    }
-    .social-icon{
-        width: 130px;
-    }
-    
-    .social-icon li{
-        font-size: 20px;
-    }
-    
-    .showcase-img {
-        width: 70%;
-        top: 57%;
-    }
-    
-    .content{
-        width: 60%;
-    }
+@media screen and (min-width: 540px) and (max-width: 1000px) {
+  .showcase {
+    background: linear-gradient(
+      to bottom right,
+      hsl(243, 94%, 18%),
+      hsl(243, 45%, 64%)
+    );
+    margin-bottom: 40px;
+  }
+  .logo {
+    width: 100px;
+  }
+  .social-icon {
+    width: 130px;
+  }
+
+  .social-icon li {
+    font-size: 20px;
+  }
+
+  .showcase-img {
+    width: 60%;
+    top: 57%;
+  }
+
+  .content {
+    width: 60%;
+  }
 }
 
+/* desktop version */
+@media screen and (min-width: 1000px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .showcase {
+    background: linear-gradient(
+      to top right,
+      hsl(243, 45%, 64%),
+      hsl(243, 94%, 18%)
+    );
+    width: 47%;
+    height: 100vh;
+  }
+  .showcase-top {
+    left: 100%;
+    
+    top:10%;
+  }
+  
+  .logo{
+      left: 14%;
+      width: 100px;
+  }
+  
+  .fylo-word{
+      fill: black;
+  }
+  .social-icon{
+      right: 0;
+      width: 50%;
+      text-align: end;
+  }
+  li a {
+      color: black;
+      font-size: 20px;
+      padding-left: 18px;
+  }
+  
+  .content {
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    right: 7%;
+  }
+  
+  .desc{
+      margin: 40px 80px 70px 0;
+      font-size: 16px;
+  }
 
-@media screen and (min-width: 900px){
+  h1 {
+    font-size: 35px;
+  }
+
+  footer {
+    width: 100%;
+   
+  }
+  
+  input[type="email"] {
+    width: 60%;
+    padding: 20px 10px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
+  }
+  
+  .btn {
+    padding: 18px 5px;
+    width: 35%;
+  }
+  
+  .priv{
+      margin-top: 100px;
+      padding-right: 15px; 
+  }
   
 }
