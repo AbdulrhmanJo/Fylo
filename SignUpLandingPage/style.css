@@ -33,33 +33,34 @@ a {
 img {
   width: 100%;
 }
+
+li {
+  display: inline-block;
+  padding-left: 18px;
+}
+
 .container {
   width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.showcase {
-  width: 100%;
-  height: 80vh;
-  background: url("./images/bg-intro.svg") no-repeat center center/cover;
-  position: relative;
-}
-
-.showcase-top {
-  position: relative;
-  height: 90px;
-  top: 5%;
+.header{
+  width: 42%;
+  position: absolute;
+  right:5%;
+  top: 70px;
+  z-index: 1;
 }
 
 .logo {
+  width: 100px;
   position: absolute;
-  width: 90px;
-  top: 7%;
-  left: 10%;
-  align-items: center;
 }
 
 .fylo-word {
-  fill: white;
+  fill: black;
 }
 
 .fylo {
@@ -67,50 +68,83 @@ img {
 }
 
 .social-icon {
-  position: absolute;
-  width: 120px;
-  top: 7%;
-  right: 5%;
-}
-
-li {
-  display: inline-block;
-  padding-left: 18px;
-}
-
-.showcase-img {
-  position: absolute;
-  width: 75%;
-  top: 52%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.content {
-  width: 70%;
-  margin: auto;
+  text-align: end;
   padding: 5px;
 }
 
-.desc {
-  margin: 15px 0px 20px;
-  font-size: 11px;
+li a {
+  color: black;
+  font-size: 17px;
+  padding-left: 18px;
 }
 
-input[type="email"] {
+.photo-section {
+  width: 47%;
+  background:  linear-gradient(
+    to top right,
+    hsl(243, 45%, 64%),
+    hsl(243, 94%, 18%)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;   
+}
+
+.showcase-img{
+  width: 70%;
+}
+
+.content-wrapper{
+  width: 53%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.content {
+  width: 78%;
+  padding-top: 90px;
+}
+.slogen {
   width: 100%;
-  padding: 10px 10px;
+}
+
+.slogen  h1{
+  font-size: 35px;
+  line-height: 2.5rem;
+}
+
+.desc {
+  font-size: 15px;
+  padding: 30px 0 40px;
+  width: 85%;
+}
+
+.signUp-form{
+  width: 100%;
+  padding-bottom: 50px
+}
+
+.signUp-form h4{ 
+ padding-bottom: 15px;  
+}
+input[type="email"] {
+  width: 63%;
+  padding: 14px 10px;
   border: 1px solid white;
   border-radius: 4px;
-  margin: 15px 0px 20px;
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+  margin-right: 5px; 
 }
 
 .btn {
   background-color: hsl(163, 95%, 43%);
   display: inline-block;
   padding: 12px 5px;
-  width: 45%;
+  width: 35%;
   border: none;
   border-radius: 4px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
@@ -122,7 +156,6 @@ input[type="email"] {
 
 .priv {
   text-align: right;
-  margin: 40px 0px 19px;
   font-size: 12px;
   text-decoration: underline;
   color: black;
@@ -137,10 +170,15 @@ input[type="email"] {
   font-size: 10px;
   padding: 3px;
   text-align: center;
+  
+}
+
+footer{
+  width: 100%;
 }
 
 /* tablet version */
-@media screen and (min-width: 540px) and (max-width: 1000px) {
+/* @media screen and (min-width: 510px) and (max-width: 850px) {
   .showcase {
     background: linear-gradient(
       to bottom right,
@@ -161,7 +199,7 @@ input[type="email"] {
   }
 
   .showcase-img {
-    width: 60%;
+    width: 57%;
     top: 57%;
   }
 
@@ -171,7 +209,7 @@ input[type="email"] {
 }
 
 /* desktop version */
-@media screen and (min-width: 1000px) {
+/*@media screen and (min-width: 850px) {
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -187,8 +225,7 @@ input[type="email"] {
   }
   .showcase-top {
     left: 100%;
-    
-    top:10%;
+    top:5%;
   }
   
   .logo{
@@ -212,9 +249,8 @@ input[type="email"] {
   
   .content {
     width: 40%;
-    position: absolute;
-    top: 30%;
-    right: 7%;
+    height: 100vh;
+    margin: 0;
   }
   
   .desc{
@@ -248,4 +284,4 @@ input[type="email"] {
       padding-right: 15px; 
   }
   
-}
+} */
