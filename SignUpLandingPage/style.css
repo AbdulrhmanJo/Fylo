@@ -204,6 +204,51 @@ footer{
   }
 }
 
+
+@media screen and (max-width: 600px) {
+  .photo-section{
+    order: -1;
+    width: 100%;
+    background:  url('./images/bg-intro.svg') no-repeat cover;
+  height: 75%;
+  align-items: flex-end;
+  padding-bottom: 30px;
+  }
+  
+  .showcase-img{
+    width: 60%; 
+  }
+  
+  .header{
+    width: 90%;
+    top: 6%;
+  }
+  
+  .logo{
+    width: 90px;
+  }
+  
+  .fylo-word{
+    fill: white;
+  }
+  
+  .social-icon a{
+    color: white;
+    font-size: 20px;
+  }
+  
+  .content-wrapper{
+    width: 100%;
+    margin-bottom: 40px; 
+  }
+  
+  .slogen h1{
+    font-size: 30px;
+  }
+}
+
+
+
 /* desktop version */
 /*@media screen and (min-width: 850px) {
   .container {
