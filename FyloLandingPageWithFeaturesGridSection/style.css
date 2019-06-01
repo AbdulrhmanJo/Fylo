@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: gray;
+    width: 100%;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Raleway", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: black;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  header{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      
+  }
+  
+  nav{
+      width: 100%;
+      background-color: aqua;
+      
+  }
+  
+  .slogen{
+      width:55%; 
+      background-color: navy; 
+      
+  }
+  
+  .img {
+      width: 45%;
+      background-color: bisque;
+      
+  }
+  
+  
+  
